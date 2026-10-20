@@ -1,0 +1,20 @@
+{
+  "name": "personal-crm-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1 --port 4321",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1 --port 4321"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.14.0",
+  "dependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "astro": "7.4.1",
+    "tailwindcss": "4.3.3"
+  }
+}

@@ -1,0 +1,17 @@
+:root {
+  --color-bg: #f5efe4;
+  --color-paper: #fffcf6;
+  --color-ink: #3d3b2f;
+  --color-muted: #817b6e;
+  --color-accent: #a94d33;
+  --color-on-accent: #fffaf0;
+  --color-line: #ded5c5;
+  --color-soft: #eee6d6;
+  --color-orbit: #dfceb1;
+  --color-sticker: #e6bf75;
+  --color-note: #e9d8b5;
+  --color-closing: #e9dfcd;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --radius-cta: 50px;
+}

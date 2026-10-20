@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Круг — согласованные макеты «Тёплое»</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eae9e6;color:#34352d;font:14px system-ui,sans-serif}header{padding:16px 24px;background:#fafaf7;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}h1{font-size:17px;margin:0 0 5px}p{font-size:12px;color:#74776d;margin:0}nav{display:flex;gap:8px}button{padding:10px 15px;background:transparent;border:1px solid #bdbfb6;border-radius:8px;font:inherit;cursor:pointer}button[aria-pressed=true]{background:#3d3b2f;color:#fffaf0}button:focus-visible{outline:3px solid #a94d33}main{padding:24px;display:flex;justify-content:center}.frame{max-width:100%;overflow:hidden;border-radius:12px;box-shadow:0 12px 40px #3332}iframe{display:block;border:0;background:#f5efe4;transform-origin:top left}footer{text-align:center;padding:8px 24px 24px;color:#74776d;font-size:12px}
+</style>
+<header><div><h1>Круг / «Тёплое»</h1><p>Согласованные макеты · 20 октября 2026</p></div><nav aria-label="Размер экрана"><button id="mobile" aria-pressed="false">Мобильный · 393 px</button><button id="desktop" aria-pressed="true">Компьютер · 1440 px</button></nav></header>
+<main><div class="frame"><iframe title="Согласованный макет лендинга" src="desktop.html"></iframe></div></main>
+<footer>Прокручивайте внутри макета. Полные HTML-файлы и описание дизайна находятся рядом с этой страницей.</footer>
+<script>
+const frame=document.querySelector('.frame'), view=document.querySelector('iframe');
+let width=1440;
+function fit(){const available=document.querySelector('main').clientWidth-48;const scale=Math.min(1,available/width);frame.style.width=width*scale+'px';frame.style.height=850*scale+'px';view.style.width=width+'px';view.style.height='850px';view.style.transform='scale('+scale+')'}
+function select(mobile){width=mobile?393:1440;view.src=mobile?'mobile.html':'desktop.html';document.querySelector('#mobile').setAttribute('aria-pressed',mobile);document.querySelector('#desktop').setAttribute('aria-pressed',!mobile);fit()}
+document.querySelector('#mobile').onclick=()=>select(true);document.querySelector('#desktop').onclick=()=>select(false);window.addEventListener('resize',fit);fit();
+</script>
+</html>

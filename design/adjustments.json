@@ -1,0 +1,10 @@
+{
+  "mobile": {
+    "viewport": 393,
+    "css": "h1{font-size:52px;letter-spacing:-3px;overflow-wrap:anywhere}.intro{font-size:14px}.cta{font-size:13px;padding:15px 20px;border-radius:50px;max-width:100%;gap:20px}.visual{width:100%;justify-self:center;align-self:center}.hero{gap:44px;padding:42px 24px 34px 24px}"
+  },
+  "desktop": {
+    "viewport": 1440,
+    "css": "h1{font-size:83.52px;letter-spacing:-3px;overflow-wrap:anywhere}.intro{font-size:17px}.cta{font-size:15px;padding:17px 24px;border-radius:50px;max-width:100%;gap:20px}.visual{width:100%;justify-self:center;align-self:center}.hero{gap:80px;padding:76px 86.3984px 64px 86.3984px}"
+  }
+}
