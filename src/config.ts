@@ -1,2 +1,2 @@
-// Local preview. Replace this one URL with the application domain before publishing.
-export const appUrl = "http://127.0.0.1:3000";
+// Production application URL shared by all calls to action.
+export const appUrl = "https://app.provansov.ru";

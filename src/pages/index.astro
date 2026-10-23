@@ -12,6 +12,7 @@ import Footer from "../components/Footer.astro";
 <html lang="ru">
 <head>
 <meta charset="UTF-8" />
+<meta name="deployment-revision" content={process.env.BUILD_REVISION ?? "local"} />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="Круг — личная CRM. Сохраняйте контакты, контекст знакомства и заметки после разговоров, чтобы не терять связь с важными людьми." />
 <meta name="theme-color" content="#f5efe4" />
